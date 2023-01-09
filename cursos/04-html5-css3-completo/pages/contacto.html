@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Barbería Alura</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <header>
+    <a href="#">
+      <img class="logo--header" src="../images/logo-blanco.png" alt="Logo">
+    </a>
+    <nav>
+      <ul class="menu-navegacion">
+        <li class="menu-navegacion__item">
+          <a class="menu-navegacion__link" href="../index.html">Home</a>
+        </li>
+        <li class="menu-navegacion__item">
+          <a class="menu-navegacion__link" href="productos.html">Productos</a>
+        </li>
+        <li class="menu-navegacion__item">
+          <a class="menu-navegacion__link active" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="seccion-contactos">
+      <form class="formulario" action="">
+        <label class="formulario__item nombre-apellido" for="nombre-apellido">
+          <h3>Nombre y Apellido:</h3>
+          <input type="text" id="nombre-apellido" placeholder="Ingrese su nombre completo">
+        </label>
+        <label class="formulario__item email" for="email">
+          <h3>Email:</h3>
+          <input type="email" id="email" placeholder="ejemplo@dominio.com">
+        </label>
+        <label class="formulario__item telefono" for="telefono">
+          <h3>Teléfono:</h3>
+          <input type="tel" id="telefono" placeholder="+519XX-XXX-XXX">
+        </label>
+        <label class="formulario__item mensaje" for="mensaje">
+          <h3>Mensaje:</h3>
+          <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+        </label>
+        <fieldset class="formulario__item tipo-contacto">
+          <legend>¿Cómo le gustaría ser contactado?</legend>
+          <label for="radio-email">
+            <input type="radio" name="tipo-contacto" id="radio-email">
+            Email
+          </label>
+          <label for="radio-telefono">
+            <input type="radio" name="tipo-contacto" id="radio-telefono">
+            Teléfono
+          </label>
+          <label for="radio-whatsapp">
+            <input type="radio" name="tipo-contacto" id="radio-whatsapp" checked>
+            Whatsapp
+          </label>
+        </fieldset>
+        <fieldset class="formulario__item atencion">
+          <legend>¿En qué horario prefiere ser atendido?</legend>
+          <select name="" id="seleccion-atencion">
+            <option value="manhana">Mañana</option>
+            <option value="tarde">Tarde</option>
+            <option value="noche">Noche</option>
+          </select>
+        </fieldset>
+        <label class="formulario__item boletin" for="boletin-correo">
+          <input type="checkbox" id="boletin-correo" checked>
+          ¿Le gustaría recibir novedades de la Barbería Alura?
+        </label>
+        <input class="formulario__item boton-enviar" type="submit" value="Enviar Formulario">
+      </form>
+      <div class="horario">
+        <table>
+          <thead>
+            <tr>
+              <td>Día</td>
+              <td>Horario</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>08h - 20h</td>
+            </tr>
+            <tr>
+              <td>Miércoles</td>
+              <td>08h - 20h</td>
+            </tr>
+            <tr>
+              <td>Viernes</td>
+              <td>08h - 20h</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <img class="logo--footer" src="../images/logo-blanco.png" alt="">
+    <p class="copyright-text">&copy Copyright Barbería Alura by CristhyanPM 2022</p>
+  </footer>
+</body>
+</html>

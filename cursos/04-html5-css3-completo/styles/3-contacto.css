@@ -1,0 +1,93 @@
+/* SECCION CONTACTOS */
+.seccion-contactos {
+  padding: 60px 120px;
+
+}
+
+.formulario {
+  margin: 0 auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.formulario__item {
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+.formulario__item:not(.atencion, .boletin) > * {
+  width: 100%;
+}
+
+.formulario__item h3,
+.formulario__item legend {
+  margin-bottom: 8px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.formulario__item input,
+.formulario__item textarea {
+  font-size: 18px;
+  padding: 8px 4px;
+  border-radius: 6.4px;
+  border: 2px solid rgb(175, 175, 175);
+}
+
+#seleccion-atencion{
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: rgb(233, 233, 233);
+}
+
+.tipo-contacto label {
+  display: block;
+  margin: 8px 0;
+}
+
+.boletin {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.boton-enviar {
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(255, 174, 0);
+  color: white;
+  transition: 200ms background;
+}
+
+.boton-enviar:hover {
+  background-color: rgb(255, 183, 29);
+  /* transform: scale(1.1); */
+}
+.boton-enviar:active {
+  background-color: rgb(231, 158, 0);
+  transform: scale(0.96);
+}
+
+
+.horario {
+  margin-top: 40px;
+}
+
+.horario table {
+  margin: 0 auto;
+  font-size: 20px;
+}
+table td {
+  padding: 8px 12px;
+  border: 1px solid black;
+}
+table thead {
+  background-color: black;
+  color: white;
+}
